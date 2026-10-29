@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarala Enterprises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d9534f;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .thanks {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- JavaScript will inject the content here -->
+        <h1 id="company-title"></h1>
+        <p id="company-description"></p>
+        <p class="thanks" id="company-thanks"></p>
+    </div>
+
+    <script>
+        // Define your text content
+        const titleText = "Welcome to Sarala Enterprises";
+        const descriptionText = "We are making Jai Ganesh Papad and we are giving quality and tasty flavor of papads to customers.";
+        const thanksText = "Thanking you";
+
+        // Insert the text into the HTML elements using JavaScript
+        document.getElementById("company-title").textContent = titleText;
+        document.getElementById("company-description").textContent = descriptionText;
+        document.getElementById("company-thanks").textContent = thanksText;
+    </script>
+
+</body>
+</html>
